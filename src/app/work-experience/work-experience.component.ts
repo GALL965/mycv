@@ -9,16 +9,13 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./work-experience.component.css']
 })
 export class WorkExperienceComponent {
-
   workExperience: WorkExperience[] = [];
 
   constructor(public workExperienceService: WorkExperienceService) {
     console.log(this.workExperienceService);
     this.workExperienceService.getWorkExperience().snapshotChanges().pipe(
       map(changes =>
-        changes.map(c =>
-          ({ id: c.payload.doc.id, ...c.payload.doc.data() })
-        )
+        changes.map(c => ({ id: c.payload.doc.id, ...c.payload.doc.data() }))
       )
     ).subscribe(data => {
       this.workExperience = data;

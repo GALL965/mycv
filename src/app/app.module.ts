@@ -1,7 +1,7 @@
 import { CertificatesComponent } from './certificates/certificates.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { InterestsComponent } from './interests/interests.component';
-
+import { EducationComponent } from './education/education.component';
 
 
 import { NgModule } from '@angular/core';
@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './header/header.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 
 import { AngularFireModule } from '@angular/fire/compat';

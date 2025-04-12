@@ -1,1 +1,9 @@
-<p>education works!</p>
+<h2>Educación</h2>
+<ul>
+  <li *ngFor="let edu of educationList">
+    <strong>Preparatoria:</strong> {{ edu.preparatoria }} <br>
+    <strong>Secundaria:</strong> {{ edu.secundaria }} <br>
+    <strong>Último grado de estudios:</strong> {{ edu.ultimoGradoEstudios }}
+    <hr>
+  </li>
+</ul>
